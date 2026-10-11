@@ -32,6 +32,8 @@ const html = read('src', 'index.template.html')
   .replace('/*INLINE:vendor*/', () => vendor.replace(/<\/script/gi, '<\\/script'))
   .replace('/*INLINE:app*/', () => app.replace(/<\/script/gi, '<\\/script'));
 
-const out = join(root, '經緯度互動教材.html');
-writeFileSync(out, html);
-console.log(`built ${out} (${(html.length / 1024).toFixed(0)} KB)`);
+// 經緯度互動教材.html 給老師在本機直接開;index.html 是 GitHub Pages 網站的首頁(內容相同)
+for (const name of ['經緯度互動教材.html', 'index.html']) {
+  writeFileSync(join(root, name), html);
+  console.log(`built ${name} (${(html.length / 1024).toFixed(0)} KB)`);
+}

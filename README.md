@@ -1,6 +1,7 @@
-# 經緯度與時區互動教材(國一地理・康軒版)
+# 國中地理-經緯度|互動教材(國一地理・康軒版)
 
-直接用瀏覽器開啟 `經緯度互動教材.html` 即可使用。檔案已內嵌全部程式與地圖資料,不需要網路。
+- **線上版**:https://akira690330.github.io/junior-geography-latlon/
+- **離線版**:直接用瀏覽器開啟 `經緯度互動教材.html`(與 `index.html` 內容相同)。檔案已內嵌全部程式與地圖資料,不需要網路。
 
 ## 想改教學內容?
 
@@ -16,7 +17,7 @@
 改完後重新打包並測試:
 
 ```bash
-node build.mjs                          # 產生 經緯度互動教材.html
+node build.mjs                          # 產生 經緯度互動教材.html 與 index.html
 node --test tests/geo-logic.test.mjs    # 計算邏輯的單元測試(21 項)
 python3 tests/e2e.py                    # 瀏覽器端對端測試(37 項,需要 playwright 與 Chrome)
 ```
