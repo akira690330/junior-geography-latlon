@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>經緯度與時區互動教材</title>
+<style>
+/*INLINE:style*/
+</style>
+</head>
+<body>
+<div class="app">
+  <header class="topbar">
+    <h1>🌏 經緯度與時區</h1>
+    <nav class="modes" role="tablist" aria-label="學習模式" id="modeTabs"></nav>
+    <button class="ghost-btn" id="teacherBtn" type="button" aria-pressed="false">老師模式</button>
+    <button class="ghost-btn" id="resetBtn" type="button">重設</button>
+  </header>
+  <div class="layout">
+    <section class="stage" aria-label="地球與地圖">
+      <div class="canvas-wrap"><canvas id="map" tabindex="0" aria-label="可互動的地球與世界地圖。方向鍵可旋轉地球,模式二可用左右鍵調整時間、空白鍵播放"></canvas></div>
+      <div class="stagebar" id="stageBar"></div>
+    </section>
+    <aside class="panel" id="panel" aria-live="polite"></aside>
+  </div>
+</div>
+<script>
+/*INLINE:vendor*/
+</script>
+<script>
+/*INLINE:app*/
+</script>
+</body>
+</html>
